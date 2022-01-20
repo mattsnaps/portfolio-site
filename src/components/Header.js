@@ -3,10 +3,10 @@ import React from "react";
 
 const Header = () => (
     <header>
-        <h1>Expensify App</h1>
+        <h1>Portfolio Site</h1>
         <NavLink to="/" className={({ isActive }) => "" + (isActive ? "is-active" : "")}>Home</NavLink>
-        <NavLink to="/create" className={({ isActive }) => "" + (isActive ? "is-active" : "")}>Create Expense</NavLink>
-        <NavLink to="/help" className={({ isActive }) => "" + (isActive ? "is-active" : "")}>Help</NavLink>
+        <NavLink to="/portfolio" className={({ isActive }) => "" + (isActive ? "is-active" : "")}>Portfolio</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => "" + (isActive ? "is-active" : "")}>Contact</NavLink>
     </header>
 );
 

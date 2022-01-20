@@ -1,20 +1,19 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import React from "react";
-import ExpenseDashboardPage from "../components/ExpenseDashboardPage";
-import AddExpensePage from "../components/AddExpensePage";
-import EditExpensePage from "../components/EditExpensePage";
-import HelpPage from "../components/HelpPage";
 import NotFound from "../components/NotFoundPage";
+import Contact from "../components/Contact";
+import Portfolio from "../components/Portfolio";
+import Home from "../components/Home";
 import Header from "../components/Header";
 
 const AppRouter = () => (
     <BrowserRouter>
         <Header />
         <Routes>
-            <Route path="/" element={<ExpenseDashboardPage />} />
-            <Route path="/create" element={<AddExpensePage />} />
-            <Route path="/edit/:id" element={<EditExpensePage />} />
-            <Route path="/help" element={<HelpPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
     </BrowserRouter>
