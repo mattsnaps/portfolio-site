@@ -1,17 +1,18 @@
 import React from "react";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+
 
 const Portfolio = () => {
 
-    console.log(useParams().id);
-
-    const id = useParams().id;
-
     return (
         <div>
-            Portfolio Page.
+            <h1>My Work</h1>
+            <p>Check out the stuff I've done</p>
+            <Link to={"/portfolio/1"}>ItemOne</Link>
+            <Link to={"/portfolio/2"}>ItemTwo</Link>
+            <Link to={"/portfolio/3"}>ItemThree</Link>
+            <Link to={"/portfolio/4"}>ItemFour</Link>
 
-            {useParams().id && <p>The id is {id}</p>}
         </div>
 
     );
